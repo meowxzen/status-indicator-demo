@@ -2,12 +2,12 @@
 
 ### Description📝
 
-This is a minimalist web0based status indicator that reflects the current activity of my life based on the real-time clock. It uses a sleek, frosted-glass interface and a glowing neon indicator to provide a functional yet atmospheric "I am busy" or "I am sleeping" display.
+This is a minimalist web-based status indicator that reflects the current activity of my life based on the real-time clock. It uses a sleek, frosted-glass interface and a glowing neon indicator to provide a functional yet atmospheric "I am busy" or "I am sleeping" display.
 
 ### Technologies🛠️
 
-`HTML5`
-`CSS3`
+`HTML5`\
+`CSS3`\
 `JavaScript(Vanilla)`
 
 ### Key Features✨
