@@ -20,7 +20,7 @@ This is a minimalist web-based status indicator that reflects the current activi
 
 - UI Foundation: I started by creating a centered glass container using `rgba` background and background blur to ensure readability against any wallpaper.
 - State Login: I wrote a JavaScript function to partition the 24 hour day into four distinct phases: _Studying, Building, Sleeping and Rendering_.
-- Visual Feedback: I linked the CSS `currentColor` property to the JavaScript style updates, ensuring the glow of the status dot alaways matches the current activity's theme.
+- Visual Feedback: I linked the CSS `currentColor` property to the JavaScript style updates, ensuring the glow of the status dot always matches the current activity's theme.
 
 ### What I Learned🎓
 
@@ -38,3 +38,4 @@ This is a minimalist web-based status indicator that reflects the current activi
 ### Image🖼️
 
 ![Image](https://i.ibb.co/7Jw0jBk9/image.png)
+This is a image of the project
