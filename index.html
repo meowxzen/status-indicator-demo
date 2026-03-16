@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Status Indicator Demo</title>
+  </head>
+  <body>
+    <div id="container">
+      <span id="status-dot"></span>
+      <span id="status-text">Loading...</span>
+    </div>
+    <script>
+      function updateStatus() {
+        const now = new Date();
+        const hour = now.getHours();
+        const dot = document.getElementById("status-dot");
+        const text = document.getElementById("status-text");
+
+        if (hour >= 6 && hour < 10) {
+          text.innerText = "Zen is studying";
+          dot.style.color = "#ff0000";
+          dot.style.backgroundColor = "#ff0000";
+        } else if (hour >= 18 && hour < 22) {
+          text.innerText = "Zen is building worlds";
+          dot.style.color = "#bc13fe";
+          dot.style.backgroundColor = "#bc13fe";
+        } else if (hour >= 22 || hour < 5) {
+          text.innerText = "Zen is eeping";
+          dot.style.color = "#555";
+          dot.style.backgroundColor = "#555";
+        } else {
+          text.innerText = "Zen is rendering a better life";
+          dot.style.color = "#00ff00";
+          dot.style.backgroundColor = "#00ff00";
+        }
+      }
+
+      updateStatus();
+      setInterval(updateStatus, 6000);
+    </script>
+  </body>
+</html>
