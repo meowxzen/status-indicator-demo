@@ -15,26 +15,41 @@
       function updateStatus() {
         const now = new Date();
         const hour = now.getHours();
+        const day = now.getDay();
+
         const dot = document.getElementById("status-dot");
         const text = document.getElementById("status-text");
 
-        if (hour >= 6 && hour < 10) {
-          text.innerText = "Zen is studying";
-          dot.style.color = "#ff0000";
-          dot.style.backgroundColor = "#ff0000";
-        } else if (hour >= 18 && hour < 20) {
-          text.innerText = "Zen is building worlds";
-          dot.style.color = "#bc13fe";
-          dot.style.backgroundColor = "#bc13fe";
-        } else if (hour >= 22 || hour < 5) {
-          text.innerText = "Zen is eeping";
-          dot.style.color = "#555";
-          dot.style.backgroundColor = "#555";
+        let status = "";
+        let color = "";
+
+        if (day === 6) {
+          if (hour >= 10 && hour < 22) {
+            status = "Zen is adventuring";
+            color = "#00f4ff";
+          } else {
+            status = "Zen is recharging";
+            color = "#ffaa00";
+          }
         } else {
-          text.innerText = "Zen is rendering a better life";
-          dot.style.color = "#00ff00";
-          dot.style.backgroundColor = "#00ff00";
+          if (hour >= 6 && hour < 10) {
+            status = "Zen is studying";
+            color = "#ff0000";
+          } else if (hour >= 18 && hour < 20) {
+            status = "Zen is building worlds";
+            color = "#bc13fe";
+          } else if (hour >= 22 || hour < 5) {
+            status = "Zen is eeping";
+            color = "#555";
+          } else {
+            status = "Zen is rendering a better life";
+            color = "#00ff00";
+          }
         }
+
+        text.innerText = status;
+        dot.style.backgroundColor = color;
+        dot.style.color = color;
       }
 
       updateStatus();
