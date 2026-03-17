@@ -2,17 +2,20 @@
 
 ### Description📝
 
-This is a minimalist web-based status indicator that reflects the current activity of my life based on the real-time clock. It uses a sleek, frosted-glass interface and a glowing neon indicator to provide a functional yet atmospheric "I am busy" or "I am sleeping" display.
+A minimalist web-based status indicator that reflects my real-time activity based on the current hour and day of the week. Featuring a sleek glassmorphism interface and a dynamic neon indicator, it provides an atmospheric "whereabouts" display at a glance.
 
 ### Technologies🛠️
 
 `HTML5`\
 `CSS3`\
-`JavaScript(Vanilla)`
+`JavaScript(Vanilla)`\
+`Google Fonts (JetBrains Mono)`
 
 ### Key Features✨
 
 - Real-Time Logic: Automatically switches status text and colors based on the hour of the day.
+- Contextual Scheduling: Now it includes specific logic for weekends and weekdays.
+- Live Updates: The script checks and updates the status every 60 seconds without requiring a page refresh.
 - Glassmorphism UI: A modern, semi-transparent background with a blur effect.
 - Neon Status Dot: A dynamic indicator that uses `currentColor` and `box-shadow` to create a vibrant glowing effect.
 
@@ -28,14 +31,21 @@ This is a minimalist web-based status indicator that reflects the current activi
 - **Time-Based Logic:** Using the `Date()` object to trigger UI changes without requiring a page refresh.
 - **Advanced CSS Effects:** Mastering the `backdrop-filter` property and creating layered shadows to simulate neon light
 
+### Future improvements📘
+
+- Spotify "Now Playing" Integration
+- Discord Status Sync
+- Dynamic Backgrounds
+- Weather Overlay
+
 ### Running The Project🚀
 
 1. Clone the repository to your local machine.
-2. Ensure you have a background image of your choice named `bg.img` in the root folder (or update the CSS path).
+2. Ensure you have a background image of your choice named `bg.jpg` in the root folder (or update the CSS path).
 3. Open `index.html` in any modern web browser.
 4. The status will automatically update every minute to reflect your local time.
 
 ### Image🖼️
 
 ![Image](https://i.ibb.co/7Jw0jBk9/image.png)
-This is a image of the project
+_A preview of the project._
